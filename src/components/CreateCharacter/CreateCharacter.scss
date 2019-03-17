@@ -1,0 +1,100 @@
+.createCharacter {
+  height: 100%;
+  width: 100%;
+  padding: 2rem;
+  border-radius: 4px;
+  position: relative;
+  background-color: #151515;
+  opacity: 0.8;
+
+  &__content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2rem;
+
+    &__preference {
+      font-size: 2rem;
+      background-color: gold;
+      width: 100%;
+      cursor: pointer;
+      p {
+        font-size: 2rem;
+        color: #fff;
+      }
+    }
+
+    & h3 {
+      margin: 1rem 0 3rem 0;
+      padding: 2rem;
+      font-size: 2.5rem;
+      background-color: gold;
+      border-radius: 4px;
+      color: #fff;
+      font-weight: bolder;
+      width: 100%;
+    }
+    &__beginGame {
+      color: black;
+      background-color: #ffc300;
+      font-size: 1.4rem;
+      font-weight: bold;
+      padding: 1rem;
+      border-radius: 4px;
+      width: 200px;
+      margin: 0 auto;
+      text-align: center;
+      margin-top: 4rem;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #fff;
+        color: green;
+        font-weight: bolder;
+      }
+    }
+    &__slots {
+      height: 7.5rem;
+      width: 7.5rem;
+      padding: 0.5rem 0.2rem;
+      margin: 1rem auto;
+      position: relative;
+      cursor: pointer;
+      background-color: #ccc;
+      border: outset 5px darken(#b5651d, 15%);
+      &:hover {
+        background-color: lighten(#ccc, 25%);
+      }
+      &:disabled {
+        background-color: #ac9980;
+        border: 1px solid #7e7365;
+        color: #ccc;
+        cursor: not-allowed;
+      }
+      & img {
+        height: 90%;
+        height: 90%;
+      }
+      &--cooldown {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        font-size: 1.2rem;
+        transform: translate(-50%, -50%);
+        color: #ffc300;
+        background: linear-gradient(
+          to right bottom,
+          rgba(#000, 0.8),
+          rgba(#323232, 0.8)
+        );
+        padding: 2.1rem 0.3rem;
+        border-radius: 8px;
+        font-weight: bolder;
+      }
+    }
+  }
+}
