@@ -8,7 +8,7 @@
   opacity: 0.8;
 
   &__content {
-    position: absolute;
+    position: relative;
     top: 40%;
     left: 50%;
     width: 50%;
@@ -17,12 +17,36 @@
 
     &__preference {
       font-size: 2rem;
-      background-color: gold;
-      width: 100%;
+      background-color: #fff;
+      height: 80%;
+      margin-top: 8rem;
+      opacity: 1;
       cursor: pointer;
-      p {
-        font-size: 2rem;
-        color: #fff;
+      &:hover {
+        border: 5px solid #ffc300;
+      }
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    &__preference--active {
+      font-size: 2rem;
+      background-color: #fff;
+      height: 80%;
+      margin-top: 8rem;
+      opacity: 1;
+      cursor: pointer;
+      border: 5px solid #ffc300;
+      &:hover {
+        border: 5px solid #ffc300;
+      }
+
+      img {
+        height: 100%;
+        width: 100%;
       }
     }
 
@@ -97,4 +121,10 @@
       }
     }
   }
+}
+
+.createCharTitle {
+  color: #ffc300;
+  text-align: center;
+  font-size: 4rem;
 }

@@ -197,7 +197,7 @@ class DungeonOculus extends Component {
   };
 
   characterCreationHandler = element => {
-    if (element === "Knight") {
+    if (element === "knight") {
       var newCharacter = { ...this.state.character };
       newCharacter.portrait = knightPortrait;
       this.setState({
@@ -205,7 +205,7 @@ class DungeonOculus extends Component {
         characterCreationPhase: false
       });
     }
-    if (element === "Wizard") {
+    if (element === "wizard") {
       var newCharacter = { ...this.state.character };
       newCharacter.portrait = wizardPortrait;
       this.setState({
